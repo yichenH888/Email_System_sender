@@ -28,7 +28,7 @@ router.post('/email',(req,res) => {
             query = "insert into user(name,email) values (?,?)"
             connection.query(query,[user.name,user.email],(err,results)=>{
                 if(!err){//store email successfully and send confirmation email
-                    return res.status(200).json({message:"Successfully Store Email, confirmation email sent"});
+                    return res.status(200).json({message:"Successfully Store Name and Email, confirmation email sent"});
                 }
                 else{//error in storing email
                     return res.status(500).json(err);
