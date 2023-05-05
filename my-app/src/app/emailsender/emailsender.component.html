@@ -1,0 +1,9 @@
+<p>Email System Sender is working...</p>
+<p>Please enter your name and email address and click send:</p>
+<form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+   <input type = "text" name = "name" placeholder = "name" ngModel>
+   <br/>
+   <input type = "email" name = "email" placeholder = "email" ngModel>
+   <br/>
+   <input type = "submit" value = "send">
+</form>
